@@ -11,14 +11,6 @@ export default defineConfig({
       prepareWriteContract: true,
       watchContractEvent: false,
     }),
-    hardhat({
-      project: '../hardhat',
-      deployments: {
-        Message: {
-          11155111: '0xcc5a0d6268d70811edad77799f2168afe6382e89',
-        },
-      },
-    }),
     foundry({
       project: '../foundry',
       deployments: {

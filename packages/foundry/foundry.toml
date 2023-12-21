@@ -4,3 +4,11 @@ out = "out"
 libs = ["lib"]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+[rpc_endpoints]
+buildbear = "https://rpc.buildbear.io/contemporary-ackbar-0b531453"
+[etherscan]
+buildbear = { key = "verifyContract", url="https://rpc.buildbear.io/verify/etherscan/contemporary-ackbar-0b531453" }
+
+
+# forge verify-contract --constructor-args "0x9768818565ED5968fAACC6F66ca02CBf2785dB84" --etherscan-api-key "GXD8WR9KRGPU265UUTSXPGTGRCHBUAF794" --verifier-url "https://rpc.buildbear.io/verify/etherscan/contemporary-ackbar-0b531453" 0x88bd60F82E9D01568cf09a42B7e9056fCa9b2b7c src/TaxLossHarvester.sol:TaxLossHarvester
